@@ -27,6 +27,7 @@ namespace TodoAppWithCompletedStatusConsoleApp
             Console.WriteLine("Todo added succesfully.");
         }
 
+        // Get one todo with Id and show the info.
         public static void ShowOneTodoInfo(List<Todo> todos)
         {
             Console.WriteLine("Enter todo Id: ");
