@@ -8,6 +8,7 @@ namespace TodoAppWithCompletedStatusConsoleApp
 {
     public static class HelperFunctions
     {
+        // Menu Function
         public static void ShowMenu()
         {
             Console.WriteLine("1. Add Todo");
