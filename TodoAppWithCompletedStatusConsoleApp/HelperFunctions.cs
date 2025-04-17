@@ -43,6 +43,7 @@ namespace TodoAppWithCompletedStatusConsoleApp
             }
         }
 
+        // Show all the todos
         public static void ShowAllTodos(List<Todo> todos)
         {
             foreach (var todo in todos)
