@@ -17,6 +17,7 @@ namespace TodoAppWithCompletedStatusConsoleApp
             Console.WriteLine("0. Exit");
         }
 
+        // Add todo method
         public static void AddTodo(List<Todo> todos)
         {
             Console.WriteLine("Enter your Todo title: ");
