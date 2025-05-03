@@ -17,6 +17,11 @@ namespace TodoAppWithCompletedStatusConsoleApp
         public string Title { get; set; }
         public bool IsCompleted { get; set; } = false;
 
+        public void CompleteTask()
+        {
+            IsCompleted = true;
+        }
+
         public void DispalyInfo()
         {
             Console.WriteLine("----------------------");
