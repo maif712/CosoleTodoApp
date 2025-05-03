@@ -28,6 +28,9 @@
                     case "3":
                         HelperFunctions.ShowAllTodos(todos);
                         break;
+                    case "4":
+                        CompleteTodo();
+                        break;
                     case "0":
                         isExit = true;
                         Console.WriteLine("Exiting the application...");
@@ -35,7 +38,25 @@
                     default:
                         Console.WriteLine("Invalid input.");
                         break;
+                        
                 }
+            }
+        }
+        public static void CompleteTodo()
+        {
+            Console.WriteLine("Enter the ID of the task you want tomark as complete.");
+            string TaskId = Console.ReadLine();
+
+            Todo task =(task => task.id == TaskId);
+            if (task != null)
+            {
+                task.CompleteTask();
+                Console.WriteLine($"task{task.Title}marked as completed");
+
+            }
+            else
+            {
+                Console.WriteLine("task not found.");
             }
         }
         
