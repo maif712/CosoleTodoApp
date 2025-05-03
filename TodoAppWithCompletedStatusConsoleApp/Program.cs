@@ -29,7 +29,7 @@
                         HelperFunctions.ShowAllTodos(todos);
                         break;
                     case "4":
-                        CompleteTodo();
+                        CompleteTodo(todos);
                         break;
                     case "0":
                         isExit = true;
@@ -42,12 +42,12 @@
                 }
             }
         }
-        public static void CompleteTodo()
+        public static void CompleteTodo(List<Todo>todos)
         {
             Console.WriteLine("Enter the ID of the task you want tomark as complete.");
             string TaskId = Console.ReadLine();
 
-            Todo task =(task => task.id == TaskId);
+            Todo task = todos.Find(t => t.Id == TaskId);
             if (task != null)
             {
                 task.CompleteTask();
